@@ -9,7 +9,8 @@ var boy;
 
 function preload(){
  //var boyImg=loadImage("boy.jfif");
- 
+ ThunderImg=loadImage("Thunder.png");
+
 }
 
 
