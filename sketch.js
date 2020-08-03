@@ -43,12 +43,33 @@ function draw() {
   drops.push(new Drops(random(0,600),0));
  }
 
+ ////////////
+ 
+ // By Using Switch case method
+ if(frameCount % 100 === 0) {
+   //thunder sprite
+thunder=createSprite(250,30,20,80);
+var a=1;
+while(a<2){
+  var ran = Math.round(random(1,2));
+    switch(ran) {
+      case 1:thunder.addImage(ThunderImg);
+              break;
+      case 2: thunder.addImage(ThunderImg);
+              break;
+      default: break;
+    }
+  }  
+  if(frameCount % 50 === 0 && frameCount % 100 !== 0) {
+  thunder.destroy(); 
+  }
+ }
+ 
+ ////////////
 
 //boy.display();
 
-if(frameCount%600===0){
-  thunder.display();
-}
+
 
 
 }
